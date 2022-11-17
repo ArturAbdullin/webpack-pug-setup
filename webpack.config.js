@@ -30,8 +30,8 @@ module.exports = {
         loader: PugPlugin.loader, // Pug loader
       },
       {
-        test: /\.css$/,
-        loader: "css-loader",
+        test: /\.(css|sass|scss)$/,
+        use: ["css-loader", "sass-loader"],
       },
     ],
   },
