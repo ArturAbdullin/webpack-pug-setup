@@ -16,7 +16,13 @@ module.exports = {
     filename: "js/[name].[contenthash].js",
     clean: true,
   },
-  plugins: [new PugPlugin()],
+  plugins: [
+    new PugPlugin({
+      extractCss: {
+        filename: "css/[name].[contenthash].css",
+      },
+    }),
+  ],
   module: {
     rules: [
       {
