@@ -23,6 +23,10 @@ module.exports = {
         test: /\.pug$/, // search for files with names ending in .pug
         loader: PugPlugin.loader, // Pug loader
       },
+      {
+        test: /\.css$/,
+        loader: "css-loader",
+      },
     ],
   },
   devServer: {
