@@ -10,6 +10,10 @@ module.exports = {
   output: {
     // set the output folder to be 'build'
     path: path.resolve(__dirname, "build"),
+    // set the output folder for scripts
+    // and a script output name
+    // for multiple scripts has to be set to path/[name].js
+    filename: "js/[name].js",
   },
   plugins: [new PugPlugin()],
   module: {
