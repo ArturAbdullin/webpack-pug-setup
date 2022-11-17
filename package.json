@@ -1,0 +1,24 @@
+{
+  "name": "webpack-pug-setup",
+  "version": "1.0.0",
+  "description": "webpack setup for pug templating engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturAbdullin/webpack-pug-setup.git"
+  },
+  "keywords": [
+    "webpack",
+    "pug",
+    "scss"
+  ],
+  "author": "Artur Abdullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturAbdullin/webpack-pug-setup/issues"
+  },
+  "homepage": "https://github.com/ArturAbdullin/webpack-pug-setup#readme"
+}
