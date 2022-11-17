@@ -13,7 +13,8 @@ module.exports = {
     // set the output folder for scripts
     // and a script output name
     // for multiple scripts has to be set to path/[name].js
-    filename: "js/[name].js",
+    filename: "js/[name].[contenthash].js",
+    clean: true,
   },
   plugins: [new PugPlugin()],
   module: {
