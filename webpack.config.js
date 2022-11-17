@@ -33,6 +33,10 @@ module.exports = {
         test: /\.(css|sass|scss)$/,
         use: ["css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpg|jpeg|ico)/,
+        type: "asset",
+      },
     ],
   },
   devServer: {
