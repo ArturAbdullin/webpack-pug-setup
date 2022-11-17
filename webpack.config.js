@@ -16,6 +16,13 @@ module.exports = {
     filename: "js/[name].[contenthash].js",
     clean: true,
   },
+  resolve: {
+    // use alias to avoid relative paths like `./../../images/`
+    alias: {
+      Images: path.resolve(__dirname, "src/img"),
+      JSscripts: path.resolve(__dirname, "src/js"),
+    },
+  },
   plugins: [
     new PugPlugin({
       extractCss: {

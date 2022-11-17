@@ -11,4 +11,8 @@ html(lang="en")
       h1 Hello Pug! 
       p webpack + pug
     img(src=require("./img/mahadev.jpg"), alt="Mahadev")
-    script(src=require('js/script.js')) 
+    br
+    //- `Images` is an alias for ./src/img (see webpack.config.js)
+    img(src=require("Images/pugImage.jpg"), alt="Pug image" title="the PUG!")
+    //- `JSscripts` is an alias for ./src/img (see webpack.config.js)
+    script(src=require("JSscripts/script.js")) 
